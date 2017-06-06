@@ -3,7 +3,7 @@
 <launch>
   <arg name="joy_dev" default="/dev/input/js0" />
   <arg name="joy_config" default="pcjoy" />
-  <arg name="teleop_config" default="$(find bebop_tools)/config/$(arg joy_config).yaml" />
+  <arg name="teleop_config" default="$(find bebop_joystick)/config/$(arg joy_config).yaml" />
   <arg name="namespace" default="bebop" />
 
   <group ns="$(arg namespace)">
